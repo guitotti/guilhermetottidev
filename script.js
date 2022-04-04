@@ -20,3 +20,4 @@ function switchMenu(event) {
 
 menuButton.addEventListener('click', switchMenu);
 menuButton.addEventListener('touchstart', switchMenu);
+

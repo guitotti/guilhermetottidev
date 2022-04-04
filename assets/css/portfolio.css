@@ -31,13 +31,14 @@
 
     .portfolio {
         display: block;
+        
     }
 
     .portfolio__div-title {
         height: auto;
-        margin: 0;
-        margin-top: 6em;
+        
         padding: 0;
+        padding-top: 6em;
         width: 100%;
     }
     
@@ -49,6 +50,7 @@
         margin: 0;
         text-align: center;
         padding: 0;
+
     }
 
     .portfolio__grid {
@@ -86,7 +88,7 @@
     }
 
     .portfolio__grid {
-        padding: 5rem 0 0 5rem;
+        padding: 3rem 0 4rem 3rem;
     }
 }
 

@@ -34,9 +34,7 @@ header {
     margin-right: 0;
 }
 
-.menu__item:hover {
-    transform: scale(1.1);
-}
+
 
 .menu__link {
     color: blueviolet;
@@ -46,9 +44,6 @@ header {
     text-shadow: none;
 }
 
-.menu__link.active {
-    font-weight: bold;
-}
 
 @keyframes bgGradient {
     0% {
@@ -155,6 +150,10 @@ header {
     .header {
         padding: 0 5rem;
         justify-content: center;
+    }
+
+    .menu__item:hover {
+        transform: scale(1.1);
     }
 }
 
