@@ -86,6 +86,27 @@
     
 }
 
+.CV-download {
+    background: blueviolet;  
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 3em;
+    opacity: 0.6;
+    padding: 0.9em 1.3em;
+    transition: 0.5s;
+}
+
+#CV-download__link {
+    color: #f4f4f6;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.CV-download:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 0 ) {
     .about-me {
         display: block;
