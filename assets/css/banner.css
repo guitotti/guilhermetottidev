@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+.banner {
+    height: calc(100vh - 72px);
+    
+    position: relative;
+    animation: bgGradient 7s ease infinite;
+}
+
+.banner__titles {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.banner__title {
+    color: #f4f4f6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5.0625rem;
+    text-shadow: 1px 3px 3px blueviolet;
+    animation: shadowGradient 7s ease infinite;  
+}
+
+#banner__subtitle {
+    margin-top: 0;
+    font-size: 3.5rem;
+}
+
+@keyframes bgGradient {
+    0% {
+        background-color: blueviolet;
+        text-shadow: 1px 3px 3px rgb(1, 194, 200);
+    }
+    50% {
+        background-color: rgb(1, 194, 200);
+        text-shadow: 1px 3px 3px blueviolet;
+    }
+    100% {
+        background-color: blueviolet;
+        text-shadow: 1px 3px 3px rgb(1, 194, 200);
+    }
+}
+
+@keyframes shadowGradient {
+    0% {
+        text-shadow: 2px 4px 6px rgb(1, 194, 200);
+    }
+    50% {
+        text-shadow: 2px 4px 6px blueviolet;
+    }
+    100% {
+        text-shadow: 2px 4px 6px rgb(1, 194, 200);
+    }
+}
+
+@media screen and (min-width: 0 ) {
+
+    .banner__title {
+        font-size: 3rem;
+    }
+
+    #banner__subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px ) {
+    .banner__title {
+        font-size: 5rem;
+    }
+
+    #banner__subtitle {
+        font-size: 3.5rem;
+    }
+}

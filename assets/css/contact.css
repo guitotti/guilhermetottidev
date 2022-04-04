@@ -1,0 +1,167 @@
+.contact {
+    animation: bgGradient 7s ease infinite;
+    display: flex; 
+    margin: 0;
+    padding-top: 6em;
+    min-height: 100vh;
+    padding: 0;
+    
+    background: grey;
+}
+
+@keyframes bgGradient {
+    0% {
+        background-color: blueviolet;
+        text-shadow: 1px 3px 3px rgb(1, 194, 200);
+    }
+    50% {
+        background-color: rgb(1, 194, 200);
+        text-shadow: 1px 3px 3px blueviolet;
+    }
+    100% {
+        background-color: blueviolet;
+        text-shadow: 1px 3px 3px rgb(1, 194, 200);
+    }
+}
+
+.contact__div-title {
+    width: 30rem;
+    height: 100vh;
+    margin-right: 10rem;
+}
+
+#contact__title {
+    color: #f4f4f6;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3em;
+    margin-left: 8rem;
+    margin-top: 20rem;
+    text-align: left;
+    animation: shadowGradient 7s ease infinite;
+}
+
+@keyframes shadowGradient {
+    0% {
+        text-shadow: 2px 4px 6px rgb(1, 194, 200);
+    }
+    50% {
+        text-shadow: 2px 4px 6px blueviolet;
+    }
+    100% {
+        text-shadow: 2px 4px 6px rgb(1, 194, 200);
+    }
+}
+
+.social-links {
+    margin: auto;
+}
+
+.social-links nav ul li a{
+    text-shadow: none;
+}
+ 
+.social-links nav {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.social-links nav ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.social-links nav li {
+	display: block;
+    
+}
+
+.social-links nav a {
+	text-decoration: none;
+    color: #f4f4f6;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 10px;
+    font-size: 28px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+
+
+.social-links nav img {
+    width: 80px;
+    margin-right: 25px;
+}
+
+@media screen and (min-width: 0 ) {
+
+    .contact {
+        display: block;
+        padding-top: 6em;
+        
+    }
+
+    .contact__div-title {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 6em;
+    }
+    
+    #contact__title {
+        border: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .social-links nav a {
+        margin-left: 20%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    .contact {
+        display: flex;
+        padding-bottom: 0;
+        margin-top: 3em;
+    }
+
+    .contact__div-title {
+        width: 30rem;
+        height: 100vh;
+        margin: 0;  
+        margin-left: 15%;
+        
+    }
+    
+    #contact__title {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 3em;
+        margin-top: 60%;
+        text-align: center;
+    }
+    
+    .social-links nav a {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    .social-links {
+        margin-right: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    .social-link:hover {
+        /*background-color: rgba(102, 97, 107, 0.157);*/
+        transform: scale(1.1);
+    }
+}
