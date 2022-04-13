@@ -4,16 +4,12 @@ header {
 
 .header {
     align-items: center;
-    border-bottom: 0.04rem solid rgba(255, 255, 255, 0.356);
     display: flex;
     height: 72px;
     margin: 0;
     padding: 0;
 }
 
-.logo {
-    width: 58px;
-}
 
 #menu__button {
     display: none;
@@ -26,7 +22,7 @@ header {
 
 .menu__item {
     list-style: none;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.3s ease-in-out;
 }
 
@@ -37,25 +33,14 @@ header {
 
 
 .menu__link {
-    color: blueviolet;
+    color: #646464;
+    font-weight: bold;
     margin-right: 1.25rem;
     text-decoration: none;
     text-transform: lowercase;
     text-shadow: none;
 }
 
-
-@keyframes bgGradient {
-    0% {
-        background-color: blueviolet;
-    }
-    50% {
-        background-color: rgb(1, 194, 200);
-    }
-    100% {
-        background-color: blueviolet;
-    }
-}
 
 @media screen and (min-width: 0) {
     .header {
@@ -115,7 +100,7 @@ header {
     }
 
     #burger {
-        color: blueviolet;
+        color: #646464;
         border-top: 2px solid;
         width: 25px;
         display: block;
@@ -146,19 +131,12 @@ header {
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 600px){
     .header {
-        padding: 0 5rem;
         justify-content: center;
     }
 
     .menu__item:hover {
         transform: scale(1.1);
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .header {
-        justify-content: right;
     }
 }

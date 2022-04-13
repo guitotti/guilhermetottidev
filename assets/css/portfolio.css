@@ -11,7 +11,7 @@
 }
 
 #portfolio__title {
-    color: blueviolet;
+    color: #00ed7e;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3em;
     margin-left: 8rem;
@@ -44,7 +44,7 @@
     
     #portfolio__title {
         border: none;
-        color: blueviolet;
+        color: #00ed7e;
         font-family: 'Ubuntu', sans-serif;
         font-size: 2em;
         margin: 0;
@@ -79,7 +79,7 @@
     }
     
     #portfolio__title {
-        color: blueviolet;
+        color: #00ed7e;
         font-family: 'Ubuntu', sans-serif;
         font-size: 3em;
         margin-left: 8rem;
@@ -158,9 +158,9 @@
 }
 
 .grid__item__button {
-    background: blueviolet;
+    background: #9b9b9b;
     border: solid 1px;
-    border-color: blueviolet;
+    border-color: #9b9b9b;
     border-radius: 5px;
     color: #fdfdfd;
     padding: 0.7rem;
@@ -172,9 +172,9 @@
 .grid__item__button:hover {
     cursor: pointer;
     background: #fdfdfd;
-    color: rgb(1, 194, 200);
+    color: blueviolet;
     border: solid 1px;
-    border-color:rgb(1, 194, 200);
+    border-color:blueviolet;
 }
 
 .grid__item h4 {

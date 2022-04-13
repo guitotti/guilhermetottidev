@@ -2,61 +2,64 @@
 
 .banner {
     height: calc(100vh - 72px);
+    display: flex;
+    background: #393939;
     
-    position: relative;
-    animation: bgGradient 7s ease infinite;
+    align-items: center;
 }
 
-.banner__titles {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-}
+
 
 .banner__title {
     color: #f4f4f6;
     font-family: 'Ubuntu', sans-serif;
     font-size: 5.0625rem;
-    text-shadow: 1px 3px 3px blueviolet;
-    animation: shadowGradient 7s ease infinite;  
+    padding-top: 1em;
 }
 
 #banner__subtitle {
     margin-top: 0;
+    padding-top: 0;
     font-size: 3.5rem;
+    color: #00ed7e;
 }
 
-@keyframes bgGradient {
-    0% {
-        background-color: blueviolet;
-        text-shadow: 1px 3px 3px rgb(1, 194, 200);
-    }
-    50% {
-        background-color: rgb(1, 194, 200);
-        text-shadow: 1px 3px 3px blueviolet;
-    }
-    100% {
-        background-color: blueviolet;
-        text-shadow: 1px 3px 3px rgb(1, 194, 200);
-    }
+.banner__image__figure img{
+    border-radius: 50%;
 }
 
-@keyframes shadowGradient {
-    0% {
-        text-shadow: 2px 4px 6px rgb(1, 194, 200);
-    }
-    50% {
-        text-shadow: 2px 4px 6px blueviolet;
-    }
-    100% {
-        text-shadow: 2px 4px 6px rgb(1, 194, 200);
-    }
-}
 
 @media screen and (min-width: 0 ) {
+
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .banner__titles {
+        text-align: center;
+        width: 100vw;
+    }
+
+    .banner__image {
+        text-align: center;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .banner__image__figure {
+        padding: 0em;
+    }
+
+    .banner__image__figure img{
+        border: 4px solid;
+        border-color: #00ed7e;
+        width: 140px;
+        height: 140px;
+    }
 
     .banner__title {
         font-size: 2.5rem;
@@ -67,12 +70,38 @@
     }
 }
 
-@media screen and (min-width: 768px ) {
+@media screen and (min-width: 1280px ) {
+    
+    .banner {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .banner__titles {
+        text-align: right;
+        padding-right: 8em;
+    }
+    
     .banner__title {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #banner__subtitle {
-        font-size: 3.5rem;
+        font-size: 3rem;
+    }
+
+    .banner__image {
+        text-align: left;
+    }
+    .banner__image__figure {
+        padding-left: 0;
+    }
+
+    .banner__image__figure img{
+        border: 8px solid;
+        border-color: #00ed7e;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
     }
 }

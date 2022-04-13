@@ -1,39 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 .about-me {
-    min-height: 100vh;
     background: #fdfdfd;
-    margin: 0;
-    /*max-width: 1200px;*/
-
-        /* margin auto é interpretada apenas no eixo horizontal */
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
-}
-
-.about-me__div-title {
-    width: 30rem;
-    height: 100vh;
-    margin-top: 10rem;
-    margin-right: 3rem;
-    padding: 0;
+    flex-direction: column;
+    margin: 0;
+    
 }
 
 #about-me__title {
-    color: blueviolet;
+    align-items: ;
+    color: #00ed7e;
     border-right: solid 2px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3em;
-    margin-left: 8rem;
-    margin-top: 20rem;
-    margin-right: 0rem;
-    padding-right: 2em;
-    text-align: left;
-}
-
-.about-me__content {
-    margin: 8rem 8rem 0 4rem;
+    text-align: center;
 }
 
 .about-me p {
@@ -44,27 +25,15 @@
     font-size: 1.1em;
 }
 
-.about-me .about-me__profilepic {
-    margin-left: 5em;
-    margin-bottom: 5em;
-    float: right;
-}
-
-.about-me .about-me__profilepic img {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    box-shadow:  0 0 2em rgba(49, 49, 49, 0.596);
-}
-
 .studying {
-    margin-top: 5.65em;
+    margin-top: 2em; 
 }
 
 #studying__title {
-    color: blueviolet;
+    color: #00ed7e;
     font-size: 1.65em;
     font-weight: bold;
+    text-align: center;
 }
 
 .studying__tech {
@@ -82,17 +51,17 @@
 .studying__tech__sub {
     font-weight: bold;
     font-size: 1.2em;
-    color: rgb(81, 0, 158);
-    
+    color: #00ed7e;
 }
 
 .CV-download {
-    background: blueviolet;  
+    background: #3f3f3f;  
     border-radius: 6px;
-    display: inline-block;
+    
     margin-top: 3em;
     opacity: 0.6;
     padding: 0.9em 1.3em;
+    text-align: center;
     transition: 0.5s;
 }
 
@@ -108,9 +77,9 @@
 }
 
 @media screen and (min-width: 0 ) {
+
     .about-me {
-        display: block;
-        text-align: center;
+        display: flex;
     }
 
     .about-me p {
@@ -126,26 +95,10 @@
 
     #about-me__title {
         border: none;
-        color: blueviolet;
+        color: #00ed7e;
         font-family: 'Ubuntu', sans-serif;
         font-size: 2em;
-        margin: 0;
         text-align: center;
-        padding: 0;
-    }
-
-    .about-me .about-me__profilepic {
-        align-items: center;
-        margin: 0;
-        margin-left: 2em;
-        padding: 0;
-    }
-
-    .about-me .about-me__profilepic img {
-        width: 140px;
-        height: 140px;
-        margin-bottom: 1em;
-        padding: 0;
     }
 
     .about-me__content {
@@ -163,7 +116,7 @@
     .studying__tech__img {
         opacity: 0.7;
         transition: 0.3s;
-        width: 128px;
+        width: 96px;
     }
 
     .studying__tech__img:hover  {
@@ -178,54 +131,25 @@
 
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 960px) {
     .about-me {
-        min-height: 100vh;
-        background: #fdfdfd;
-        margin: 0;
-        /*max-width: 1200px;*/
-    
-            /* margin auto é interpretada apenas no eixo horizontal */
-        margin-left: auto;
-        margin-right: auto;
+             
+        margin-left: 8%;
+        margin-right: 8%;
+        align-items: center;
         display: flex;
     }
     
+
     .about-me__div-title {
-        width: 30rem;
-        height: 100vh;
-        margin-top: 10rem;
-        margin-right: 3rem;
-        padding: 0;
+        margin-bottom: 2em;
     }
     
     #about-me__title {
-        color: blueviolet;
-        border-right: solid 2px;
+        color: #00ed7e;
+        border-left: solid 2px;
         font-family: 'Ubuntu', sans-serif;
         font-size: 3em;
-        margin-left: 8rem;
-        margin-top: 20rem;
-        margin-right: 0rem;
-        padding-right: 2em;
-        text-align: left;
-    }
-
-    .about-me .about-me__profilepic {
-        margin-left: 5em;
-        margin-bottom: 5em;
-        float: right;
-    }
-    
-    .about-me .about-me__profilepic img {
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        box-shadow:  0 0 2em rgba(49, 49, 49, 0.596);
-    }
-    
-    .about-me__content {
-        margin: 8rem 15em 10em 4rem;
     }
     
     .about-me p {
@@ -234,5 +158,32 @@
         text-indent: 0em;
         font-size: 1.3em;
     }
+
+    .studying {
+        margin-bottom: 8em;
+    }
+
+    #studying__title {
+        color: #00ed7e;
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 2em;
+        text-align: center;
+    }
     
+}
+
+@media screen and (min-width: 1280px) {
+    .about-me {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .studying {
+        margin-bottom: 12em;
+    }
+
+    .studying__tech__img {
+        width: 128px;
+    }
 }
